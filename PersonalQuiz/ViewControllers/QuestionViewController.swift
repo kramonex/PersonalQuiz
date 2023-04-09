@@ -43,10 +43,10 @@ final class QuestionViewController: UIViewController {
     
     // MARK:  - Data Transfer
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let resultViewControler = segue.destination as? ResultViewController else {
+        guard let resultViewController = segue.destination as? ResultViewController else {
             return
         }
-        resultViewControler.answers = answersChosen
+        resultViewController.answers = answersChosen
     }
 
     // MARK: - IB Actions
